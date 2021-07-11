@@ -19,6 +19,8 @@
    },
    "homepage": "https://github.com/KirdesMF/CedricGourville_4_17062021#readme",
    "devDependencies": {
+      "@parcel/transformer-sass": "^2.0.0-beta.3.1",
+      "bootstrap": "^5.0.2",
       "parcel": "^2.0.0-beta.3.1"
    }
 }
