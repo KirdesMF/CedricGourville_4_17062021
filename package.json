@@ -1,0 +1,24 @@
+{
+   "name": "cedricgourville_4_17062021",
+   "version": "1.0.0",
+   "description": "OC P4",
+   "scripts": {
+      "prestart": "npx rimraf .parcel-cache dist",
+      "start": "parcel serve ./src/index.html --open",
+      "prebuild": "rm -rf public .parcel-cache",
+      "build": "parcel build ./src/index.html --dist-dir public"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/KirdesMF/CedricGourville_4_17062021.git"
+   },
+   "author": "KirdesMF",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/KirdesMF/CedricGourville_4_17062021/issues"
+   },
+   "homepage": "https://github.com/KirdesMF/CedricGourville_4_17062021#readme",
+   "devDependencies": {
+      "parcel": "^2.0.0-beta.3.1"
+   }
+}
