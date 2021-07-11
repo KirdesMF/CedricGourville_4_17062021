@@ -1,3 +1,12 @@
+.filter {
+   position: absolute;
+   top: 0;
+   width: 0;
+   height: 0;
+}
+
+/* Fin moi */
+
 body {
    margin: 0;
    padding: 0;
@@ -24,7 +33,7 @@ a:hover {
    bottom: 0;
    width: 100%;
    z-index: 100000;
-   background: #ffffff url('img/pageload-spinner.gif') no-repeat center center;
+   background: #ffffff;
 }
 
 .bloc {
@@ -62,27 +71,6 @@ a:hover {
 
 .bg-t-edge {
    background: top no-repeat;
-}
-
-.bloc-bg-texture::before {
-   content: '';
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-}
-
-.filter {
-   position: absolute;
-   top: 0;
-   width: 0;
-   height: 0;
-}
-
-.texture-paper::before {
-   background: url('img/texture-paper.png');
-   background-size: 280px 280px;
 }
 
 .b-parallax {
@@ -819,7 +807,18 @@ h4 {
 }
 
 .bg-banniere {
-   background-image: url('img/la-chouette-agence-banniere.jpg');
+   position: relative;
+}
+
+.bg-banniere::before {
+   content: '';
+   inset: 0;
+   position: absolute;
+   background: url('img/la-chouette-agence-banniere.jpg');
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   filter: url('#noise');
 }
 
 .bg-presentation {

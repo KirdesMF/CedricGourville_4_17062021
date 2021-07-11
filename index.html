@@ -32,6 +32,24 @@
 
 <body>
 
+	<!-- svg assets -->
+	<svg xmlns="http://www.w3.org/2000/svg" class="filter">
+		<defs>
+			<linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+				<stop offset="0%" stop-color="var(--start)" />
+				<stop offset="100%" stop-color="var(--stop)" />
+			</linearGradient>
+
+			<filter id="noise">
+				<feTurbulence baseFrequency="0.60" xresult="colorNoise" />
+				<feColorMatrix in="colorNoise" type="matrix"
+					values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0" />
+				<feComposite operator="in" in2="SourceGraphic" result="monoNoise" />
+				<feBlend in="SourceGraphic" in2="monoNoise" mode="multiply" />
+			</filter>
+		</defs>
+	</svg>
+
 	<!-- Principal conteneur -->
 	<div class="page-container">
 
