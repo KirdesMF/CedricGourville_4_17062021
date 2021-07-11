@@ -4,11 +4,31 @@
    top: 0;
    width: 0;
    height: 0;
+
+   --start: red;
+   --stop: yellow;
 }
 
 .icon-svg {
    display: grid;
    place-items: center;
+}
+
+.presentation .inner {
+   display: grid;
+   place-items: center;
+}
+
+.presentation span.icon-svg {
+   width: 7rem;
+   height: 7rem;
+
+   border-radius: 50%;
+   background: hsl(200, 20%, 10%);
+}
+
+.presentation span.icon-svg > svg {
+   fill: url('#gradient');
 }
 
 .social .icon-svg {
@@ -22,6 +42,11 @@
 
    fill: grey;
    stroke: none;
+}
+
+.services span.icon-svg > svg {
+   width: 7rem;
+   height: 7rem;
 }
 
 /* Fin moi */
@@ -838,6 +863,7 @@ h4 {
    background-position: center;
    background-repeat: no-repeat;
    filter: url('#noise');
+   z-index: -1;
 }
 
 .bg-presentation {
@@ -852,7 +878,9 @@ h4 {
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
+   background-size: cover;
    filter: url('#noise');
+   z-index: -1;
 }
 
 @media (max-width: 1024px) {
