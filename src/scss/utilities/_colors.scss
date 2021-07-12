@@ -1,0 +1,6 @@
+.bg-footer {
+   background-color: var(--black-color);
+   @media screen and (min-width: 768px) {
+      background-color: var(--primary-color);
+   }
+}
