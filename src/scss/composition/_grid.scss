@@ -1,0 +1,10 @@
+.grid-fluid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+   gap: 2.5rem;
+}
+
+.grid {
+   display: grid;
+   gap: 0.15rem;
+}
