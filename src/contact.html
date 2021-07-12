@@ -9,7 +9,7 @@
          content="width=device-width, initial-scale=1.0, viewport-fit=cover"
       />
 
-      <title>Refont - page2</title>
+      <title>Contact - La Chouette agence</title>
 
       <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
 
@@ -18,6 +18,7 @@
       <link rel="stylesheet" type="text/css" href="style.css" />
    </head>
    <body>
+      <!-- svg assets -->
       <svg xmlns="http://www.w3.org/2000/svg" class="svg-filter">
          <defs>
             <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -27,7 +28,7 @@
          </defs>
       </svg>
 
-      <svg xmlns="http://www.w3.org/2000/svg" class="svg-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite">
          <defs>
             <symbol id="chouette" viewBox="0 0 24 24">
                <path
@@ -115,10 +116,10 @@
       </svg>
 
       <!-- header -->
-      <header class="header bg-white">
+      <header class="header panel" data-panel="small">
          <nav class="navbar navbar-expand-md navbar-light">
             <div class="container">
-               <a class="navbar-brand icon-header w-25" href="index.html">
+               <a class="logo" href="index.html" data-logo="header">
                   <svg>
                      <use href="#chouette" />
                   </svg>
@@ -142,24 +143,31 @@
                   id="navbarNav"
                >
                   <div class="navbar-nav">
-                     <a class="nav-link active" aria-current="page" href="#"
-                        >Home</a
+                     <a class="nav-link" href="index.html">Accueil</a>
+                     <a class="nav-link" href="index.html#services"
+                        >Nos services</a
                      >
-                     <a class="nav-link" href="#">Nous connaître</a>
-                     <a class="nav-link" href="#">Nos clients</a>
-                     <a class="nav-link" href="page2.html">Contact</a>
+                     <a class="nav-link" href="index.html#portfolio"
+                        >Nos clients</a
+                     >
                   </div>
                </div>
             </div>
          </nav>
       </header>
 
-      <!-- bloc-6 -->
-      <div class="large-panel">
-         <div class="container">
-            <div class="row">
-               <div class="col-sm-12">
+      <main>
+         <!-- hero -->
+         <div class="panel bg-texture" data-texture="contact">
+            <div class="wrapper bg-overlay">
+               <div class="flow">
+                  <span class="logo" data-logo="hero">
+                     <svg>
+                        <use href="#chouette" />
+                     </svg>
+                  </span>
                   <h1 class="text-center">Parlons web design !</h1>
+
                   <p class="text-center">
                      Nous sommes ravis que vous souhaitiez collaborer avec notre
                      agence.
@@ -170,89 +178,107 @@
                </div>
             </div>
          </div>
-      </div>
-      <!-- bloc-6 END -->
 
-      <!-- bloc-7 -->
-      <div class="large-panel">
-         <div class="container">
-            <div class="row">
-               <div class="col-sm-6">
+         <!-- form -->
+         <section class="panel">
+            <div class="wrapper">
+               <div class="normal-flow">
                   <form>
                      <div class="mb-3">
-                       <label for="exampleInputEmail1" class="form-label">Email address</label>
-                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                       <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <label for="name" class="form-label">Nom</label>
+                        <input
+                           type="text"
+                           class="form-control"
+                           id="name"
+                           required
+                        />
                      </div>
                      <div class="mb-3">
-                       <label for="exampleInputPassword1" class="form-label">Password</label>
-                       <input type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="mail" class="form-label"
+                           >Adresse email</label
+                        >
+                        <input
+                           type="email"
+                           class="form-control"
+                           id="mail"
+                           aria-describedby="emailHelp"
+                           required
+                        />
+                        <div id="emailHelp" class="form-text">
+                           Cette information reste confidentielle.
+                        </div>
                      </div>
-                     <div class="mb-3 form-check">
-                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                       <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                     <div class="mb-3">
+                        <label for="known" class="form-label"
+                           >Comment nous avez vous connu ?</label
+                        >
+                        <input type="text" class="form-control" id="known" />
                      </div>
+
+                     <div class="mb-3">
+                        <label for="text" class="form-label"
+                           >Résumé de votre projet</label
+                        >
+                        <textarea
+                           class="form-control"
+                           id="text"
+                           rows="3"
+                           required
+                        ></textarea>
+                     </div>
+
                      <button type="submit" class="cta">Submit</button>
-                   </form>
-               </div>
-               <div class="col-sm-6">
+                  </form>
+
                   <p>
-                     contact@lachouetteagence.com
-                     2 place Sathonay 69001 Lyon
-                     Ouvert de 9h à 18h, du lundi au vendredi
+                     <a href="@mailto:contact@lachouetteagence.com"
+                        >contact@lachouetteagence.com</a
+                     >
+                     2 place Sathonay 69001 Lyon Ouvert de 9h à 18h, du lundi au
+                     vendredi
                   </p>
                </div>
             </div>
-         </div>
-      </div>
-      <!-- bloc-7 END -->
+         </section>
+      </main>
 
-      <!-- ScrollToTop Button -->
-      <a class="cta"> TOP </a>
+      <!-- Footer  -->
+      <footer class="panel bg-footer" data-panel="small">
+         <nav class="wrapper flex flex-wrap">
+            <ul class="flex">
+               <li>
+                  <a href="#">
+                     <svg class="svg-icon" data-icon="social">
+                        <use href="#facebook" />
+                     </svg>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <svg class="svg-icon" data-icon="social">
+                        <use href="#instagram" />
+                     </svg>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <svg class="svg-icon" data-icon="social">
+                        <use href="#twitter" />
+                     </svg>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <svg class="svg-icon" data-icon="social">
+                        <use href="#dribbble" />
+                     </svg>
+                  </a>
+               </li>
+            </ul>
 
-      <!-- Footer - bloc-8 -->
-      <div class="panel" ">
-         <div class="container ">
-            <div class="row">
-               <div class="col-sm-12">
-                  <p class="text-center ">
-                     La chouette agence - Agence web basée à Lyon.
-                     <br />
-                  </p>
-                  <div class="row ">
-                     <div class="col-sm-3">
-                        <div class="text-center">
-                           <a class="social" href="index.html">
-                              <span class="fa fa-twitter icon-md"></span>
-                           </a>
-                        </div>
-                     </div>
-                     <div class="col-sm-3">
-                        <div class="text-center">
-                           <a class="social" href="index.html">
-                              <span class="fa fa-facebook icon-md"></span>
-                           </a>
-                        </div>
-                     </div>
-                     <div class="col-sm-3">
-                        <div class="text-center">
-                           <a class="social" href="index.html">
-                              <span class="fa fa-dribbble icon-md"></span>
-                           </a>
-                        </div>
-                     </div>
-                     <div class="col-sm-3">
-                        <div class="text-center">
-                           <a class="social" href="index.html">
-                              <span class="fa fa-instagram icon-md"></span>
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+            <a href="#">La chouette agence - Agence web basée à Lyon.</a>
+         </nav>
+      </footer>
 
       <script src="index.js" defer></script>
    </body>

@@ -9,6 +9,16 @@
 .bg-texture {
    background-color: var(--primary-color);
 
+   &[data-texture='contact'] {
+      background: radial-gradient(var(--secondary-color) 20%, transparent 20%),
+         radial-gradient(var(--secondary-color) 20%, transparent 20%),
+         var(--primary-color);
+      background-attachment: fixed;
+      background-position: 0 0, 2.5px 2.5px, center;
+      background-repeat: repeat, repeat, no-repeat;
+      background-size: 5px 5px, 5px 5px, cover;
+   }
+
    @media screen and (min-width: 768px) {
       --url: url('../img/la-chouette-agence-banniere.webp');
 

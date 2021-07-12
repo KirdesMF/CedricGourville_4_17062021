@@ -3,3 +3,8 @@
    gap: var(--gap-flow, 2.5rem);
    place-items: center;
 }
+
+.normal-flow {
+   display: grid;
+   gap: var(--gap-flow, 2.5rem);
+}
