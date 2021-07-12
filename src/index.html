@@ -29,7 +29,7 @@
          </defs>
       </svg>
 
-      <svg xmlns="http://www.w3.org/2000/svg" class="svg-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite">
          <defs>
             <symbol id="chouette" viewBox="0 0 24 24">
                <path
@@ -165,10 +165,10 @@
       </svg>
 
       <!-- header -->
-      <header class="header panel">
+      <header class="header panel" data-panel="small">
          <nav class="navbar navbar-expand-md navbar-light">
             <div class="container">
-               <a class="navbar-brand icon-header" href="index.html">
+               <a class="logo" href="index.html" data-logo="header">
                   <svg>
                      <use href="#chouette" />
                   </svg>
@@ -205,12 +205,12 @@
       </header>
 
       <main>
-         <!-- bloc-1-presentation -->
-         <div class="presentation hero bg-texture large-panel">
+         <!-- hero -->
+         <section class="bg-texture panel">
             <div class="container wrapper">
                <div class="flow">
-                  <span class="icon-svg">
-                     <svg width="5rem" height="5rem">
+                  <span class="logo" data-logo="hero">
+                     <svg>
                         <use href="#chouette" />
                      </svg>
                   </span>
@@ -222,45 +222,44 @@
                   <a href="page2.html" class="cta"> En savoir plus sur nous </a>
                </div>
             </div>
-         </div>
-         <!-- bloc-1-presentation END -->
+         </section>
 
-         <!-- bloc-2-services -->
-         <section class="services large-panel">
+         <!-- services -->
+         <section class="services panel">
             <div class="container flow wrapper">
                <div class="row justify-content-center">
                   <div class="col-sm-6">
                      <h2 class="text-center fs-4">
-                        Notre équipe de designers et de developpeurs prend votre
-                        projet en main en partant de votre idée jusqu'au
-                        produits final.
+                        Nos équipes de designers et de developpeurs vous
+                        accompagnent dans votre projet, de votre idée jusqu'au
+                        produit final.
                      </h2>
                   </div>
                </div>
                <div class="row">
-                  <div class="col-sm-4">
-                     <span class="icon-svg">
+                  <div class="col-sm-4 card">
+                     <span class="svg-icon" data-icon="services">
                         <svg>
                            <use href="#windows" />
                         </svg>
                      </span>
 
-                     <h3 class="text-center">Web design</h3>
-                     <p class="text-center">
+                     <h3>Web design</h3>
+                     <p>
                         Que vous ayez un site web qui a besoin d&rsquo;un
                         rafraîchissement ou que vous partiez de zéro,
                         laissez-nous vous réaliser un design dont vous serez
                         fier.
                      </p>
                   </div>
-                  <div class="col-sm-4">
-                     <span class="icon-svg">
+                  <div class="col-sm-4 card">
+                     <span class="svg-icon" data-icon="services">
                         <svg>
                            <use href="#board" />
                         </svg>
                      </span>
-                     <h3 class="text-center">&nbsp;Stratégie</h3>
-                     <p class="text-center">
+                     <h3>&nbsp;Stratégie</h3>
+                     <p>
                         Plutôt que de suggérer des designs à la mode, nous
                         travaillerons avec vous pour comprendre vos objectifs
                         commerciaux afin de vous proposer le meilleur design
@@ -268,14 +267,14 @@
                         <br />
                      </p>
                   </div>
-                  <div class="col-sm-4">
-                     <span class="icon-svg">
+                  <div class="col-sm-4 card">
+                     <span class="svg-icon" data-icon="services">
                         <svg>
                            <use href="#pencil" />
                         </svg>
                      </span>
-                     <h3 class="text-center">Illustrations</h3>
-                     <p class="text-center">
+                     <h3>Illustrations</h3>
+                     <p>
                         Un bon design n'est rien sans de bonnes illustrations.
                         Laissez faire notre équipe de graphistes talentueux pour
                         donner à vos pages une touche finale d'élégance.
@@ -287,7 +286,7 @@
          <!-- bloc-2-services END -->
 
          <!-- bloc-3-what-i-do -->
-         <div class="bg-texture call-cta large-panel">
+         <div class="bg-texture panel" data-img="custom">
             <div class="container flow wrapper">
                <h2 class="text-center">
                   Nous souhaitons aider les entreprises de la région Lyonnaise à
@@ -308,7 +307,7 @@
          <!-- bloc-3-what-i-do END -->
 
          <!-- bloc-4-portfolio -->
-         <div class="large-panel bg-lines">
+         <div class="panel bg-lines">
             <div class="container wrapper flow">
                <div class="row">
                   <div class="col-sm-12 text-center">
@@ -420,7 +419,7 @@
          <!-- bloc-4-portfolio END -->
 
          <!-- bloc-5-cta -->
-         <div class="hero bg-texture large-panel">
+         <div class="bg-texture panel">
             <div class="container">
                <div class="flow">
                   <h2 class="text-center">
@@ -435,7 +434,7 @@
          </div>
       </main>
       <!-- Footer  -->
-      <footer class="panel">
+      <footer class="panel" data-panel="small">
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
@@ -446,7 +445,7 @@
                      <div class="col-sm-3">
                         <div class="text-center">
                            <a class="social" href="index.html">
-                              <span class="icon-svg">
+                              <span class="svg-icon" data-icon="social">
                                  <svg>
                                     <use href="#twitter" />
                                  </svg>

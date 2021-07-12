@@ -1,0 +1,14 @@
+.card {
+   display: grid;
+   grid-template-rows: 5rem min-content min-content;
+   place-items: center;
+   gap: 1.5rem;
+
+   text-align: center;
+
+   & svg {
+      fill: var(--secondary-color);
+      height: 6.5rem;
+      width: 6.5rem;
+   }
+}

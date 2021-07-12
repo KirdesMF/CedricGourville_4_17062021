@@ -1,5 +1,13 @@
-@import './colors';
-@import './fonts';
-@import './helpers';
+@import './base/colors';
+@import './base/fonts';
 
-@import './components/cta';
+@import './composition/flow';
+@import './composition/panel';
+@import './composition/wrapper';
+
+@import './utilities/background';
+
+@import './block/cta';
+@import './block/logo';
+@import './block/svg-icon';
+@import './block/card';
