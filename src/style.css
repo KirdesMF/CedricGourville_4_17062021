@@ -1,7 +1,0 @@
-.bg-lines {
-   background-image: linear-gradient(
-      hsla(219, 69%, 34%, 0.15) 0.5px,
-      transparent 1px
-   );
-   background-size: 7px 7px;
-}
