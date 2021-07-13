@@ -1,8 +1,8 @@
 .cards {
    display: grid;
-   grid-template-rows: 15rem 3rem 6rem;
+   grid-template-rows: 15rem 3rem 5rem max-content;
    gap: 1.5rem;
-   padding: 0.75rem;
+   padding: 1.25rem;
 
    background: var(--white-color, white);
    box-shadow: 0 0 2.5px var(--black-color);
@@ -16,6 +16,13 @@
 
    & a {
       transition: opacity 500ms ease-in-out;
+      place-self: center;
+      padding: 1rem;
+      background: var(--primary-color);
+      box-shadow: 0 0 2px var(--black-color);
+      border-radius: 0.25rem;
+      text-transform: uppercase;
+      font-weight: 800;
    }
 
    & a:hover,
