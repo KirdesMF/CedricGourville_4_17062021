@@ -1,0 +1,26 @@
+.cta {
+   padding: 0.75rem 1.75rem;
+
+   border-radius: 2.5rem;
+   background-color: var(--secondary-color);
+   color: white;
+   box-shadow: 0 1px 3px rgb(0 0 1 / 25%),
+      inset 0 1px 0 0 rgb(255 255 255 / 15%);
+
+   text-decoration: none;
+   text-transform: uppercase;
+   font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+   font-weight: 700;
+
+   transition: background-color 200ms ease-in-out;
+
+   @media screen and (min-width: 768px) {
+      background-color: var(--primary-color);
+   }
+
+   &:hover {
+      cursor: pointer;
+      background-color: var(--secondary-color);
+      color: var(--white-color, white);
+   }
+}

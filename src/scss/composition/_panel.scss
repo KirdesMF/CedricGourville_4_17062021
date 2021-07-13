@@ -1,0 +1,7 @@
+.panel {
+   padding: 6.25rem 0;
+
+   &[data-panel='small'] {
+      padding: 3.25rem 0;
+   }
+}

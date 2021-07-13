@@ -1,0 +1,12 @@
+:root {
+   --gap-flow: 3.5rem;
+}
+
+a {
+   color: currentColor;
+}
+
+:focus {
+   outline: 5px dotted var(--primary-color);
+   outline-offset: 0.5rem;
+}

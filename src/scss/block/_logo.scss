@@ -1,0 +1,41 @@
+.logo {
+   display: grid;
+
+   & svg {
+      height: 100%;
+      width: 100%;
+   }
+
+   &[data-logo='header'] {
+      grid-template-columns: 5rem;
+      grid-template-rows: 3.5rem;
+
+      @media screen and (min-width: 768px) {
+         grid-template-columns: 5rem 10rem;
+      }
+
+      & svg {
+         fill: var(--secondary-color);
+      }
+
+      & svg:last-child {
+         display: none;
+
+         @media screen and (min-width: 768px) {
+            display: block;
+         }
+      }
+   }
+
+   &[data-logo='hero'] {
+      width: 7rem;
+      height: 7rem;
+      padding: 1.5rem;
+      border-radius: 50%;
+      background: var(--black-color);
+
+      & svg {
+         fill: url('#gradient');
+      }
+   }
+}
