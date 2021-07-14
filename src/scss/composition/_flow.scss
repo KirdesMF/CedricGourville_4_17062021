@@ -1,7 +1,10 @@
 .flow {
    display: grid;
    gap: var(--gap-flow, 2.5rem);
-   place-items: center;
+
+   & > * {
+      place-self: center;
+   }
 }
 
 .normal-flow {

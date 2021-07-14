@@ -1,6 +1,6 @@
 .cards {
    display: grid;
-   grid-template-rows: 15rem 3rem 5rem;
+   grid-template-rows: 15rem max-content max-content;
    gap: 1.5rem;
    padding: 1.25rem;
 

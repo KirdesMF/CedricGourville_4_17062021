@@ -5,12 +5,47 @@ h4 {
    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-h3 {
-   font-size: 1.125rem;
-}
-
 p,
 q {
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+p {
+   font-size: clamp(
+      var(--fluid-type-min, 1rem),
+      calc(1rem + var(--fluid-type-target, 3vw)),
+      var(--fluid-type-max, 1.3rem)
+   );
+}
+
+h1 {
+   --fluid-type-min: 1rem;
+   --fluid-type-max: 2.5rem;
+   --fluid-type-target: 5vw;
+}
+
+h2 {
+   --fluid-type-min: 0.875rem;
+   --fluid-type-max: 2rem;
+}
+
+h3 {
+   --fluid-type-min: 0.7rem;
+   --fluid-type-max: 1.725rem;
+}
+
+h1 {
+   max-width: 45ch;
+}
+
+h2,
+h3 {
+   max-width: 40ch;
+}
+
+p {
+   max-width: 60ch;
 }
