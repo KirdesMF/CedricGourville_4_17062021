@@ -1,7 +1,11 @@
 .grid-fluid {
    display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+   grid-template-columns: 1fr;
    gap: 2.5rem;
+
+   @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+   }
 }
 
 .grid {
